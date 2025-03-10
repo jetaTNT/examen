@@ -22,4 +22,12 @@ public class Paquete {
         System.out.println(paquete.volumenPaquete());
     }
 
+    @Override
+    public String toString() {
+        return "Paquete " + codigoPaquete +
+                "{ alto=" + alto +
+                ", ancho=" + ancho +
+                ", largo=" + largo +
+                '}' + '\n';
+    }
 }

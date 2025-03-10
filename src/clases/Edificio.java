@@ -1,5 +1,7 @@
 package clases;
 
+import java.util.Arrays;
+
 public class Edificio {
     String codigoEdificio;
     Integer altura;
@@ -37,5 +39,14 @@ public class Edificio {
         Paquete[] paquetes = new Paquete[]{paquete, paquete2};
         Edificio edificio = new Edificio("E1",5,7,2,paquetes);
         System.out.println(edificio.cantidadLibreEdificio());
+    }
+
+    @Override
+    public String toString() {
+        return "Edificio" +
+                 codigoEdificio + ":" + '\n' +
+
+                  Arrays.toString(listaPaquetes) +
+                '}';
     }
 }
