@@ -13,13 +13,13 @@ public class Paquete {
         this.largo = largo;
     }
 
-    public Integer calcularVolumen() {
+    public Integer volumenPaquete() {
         return alto * ancho * largo;
     }
 
     public static void ej1() {
         Paquete paquete = new Paquete("A1", 2, 3, 4);
-        System.out.println(paquete.calcularVolumen());
+        System.out.println(paquete.volumenPaquete());
     }
 
 }
